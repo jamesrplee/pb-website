@@ -1,0 +1,137 @@
+.page-header {
+	border-bottom: initial;
+}
+
+.page-header h1 {
+	font-size: 35px;
+	color: #333;
+	font-weight: 600;
+	font-family: 'Work Sans', sans-serif;
+}
+
+// HOME
+
+.flex-centre {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 3em 8em;
+}
+
+.left { width: 25%; }
+.right { width: 65%; }
+
+.left img {
+	width: 100%;
+  height: auto;
+  border: 10px solid #efefef;
+  margin: 2em 0;
+  border-radius: 20px;
+}
+
+.right h1 {
+	font-size: 5em;
+  line-height: 1em;
+  font-weight: 800;
+  color: #219f85;
+}
+
+@media (max-width: 700px) {
+	.flex-centre { padding: 2em; }
+	.left { width: 40%; }
+	.right { width: 50%; }
+}
+
+@media (max-width: 425px) {
+	.left { display: none; }
+	.right { width: 100%; }
+}
+
+
+// PAGES
+
+.main ul { padding-left: 2em; }
+
+.brochure-download {
+	width: 100%;
+	background-color: #ECECEC;
+	padding: 3em 1.5em 1.5em;
+	text-align: center;
+	h3 {
+		font-size: 1.2em;
+		margin: 0;
+		margin-bottom: 0.25em; }
+	p {
+		font-size: 1em;
+		margin: 0;
+		margin-bottom: 1em;
+		line-height: 1.1em	}
+	a { 
+		background-color: #68D1B6;
+		color: white;
+		width: 100%;
+		display: block; 
+		padding: 1em;
+		border-radius: 5px;
+		font-size: 0.9em; 
+		transition: ease background-color 0.3s;
+		transition: ease color 0.3s;
+		&:hover {
+			color: #68D1B6;
+			background-color: white;
+			text-decoration: none;
+		}
+	}
+	i { padding-right: 0.5em; }
+}
+
+@media (max-width: 720px) {
+	.brochure-download {
+		margin-top: 2em;
+	}
+}
+
+// WORKSHOPS
+.ongoing-groups-and-workshops {
+	.workshop-cards {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.brochure-download {
+		width: 49%;
+		display: inline-block;
+		margin-bottom: 1.1em;
+	}
+}
+
+.page-id-12 .slider, .page-id-14 .slider, .page-id-123 .slider { height: 10em; }
+
+// FORM
+
+input[type=text], input[type=email], textarea {
+	border: 3px solid #F6F6F6;
+	padding: 0.5em;
+	margin: 0.75em 0 0 0;
+	width: 100%;
+	transition: border ease 0.3s;
+	&:hover {
+		border: 3px solid #75E3CB; }
+	&:focus {
+		border: 3px solid #75E3CB; }
+}
+
+input[type=submit] {
+	width: 100%;
+    background-color: #75E3CB;
+    border: none;
+    padding: 1em;
+    color: white;
+    transition: background-color ease 0.3s;
+    &:hover {
+    	background-color: #3E8A6C;
+    }
+}
+
+input:focus, textarea:focus { outline:0; }
